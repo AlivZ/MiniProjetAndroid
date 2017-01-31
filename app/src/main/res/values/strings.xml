@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MiniProjetAndroid</string>
+    <string name="app_name">ProjetMobileSemestre</string>
+    <string name="action_settings" />
 </resources>

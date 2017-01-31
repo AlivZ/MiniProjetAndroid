@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView android:text="@string/app_name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" tools:context="com.miniprojetandroid.dewispelaerehagemann.miniprojetandroid.MainActivity"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Nom"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp"
+        android:width="120dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Prenom"
+        android:layout_marginTop="41dp"
+        android:width="120dp"
+        android:layout_below="@+id/editText_Nom"
+        android:layout_alignRight="@+id/editText_Nom"
+        android:layout_alignEnd="@+id/editText_Nom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:id="@+id/textView_Nom"
+        android:textSize="18dp"
+        android:layout_above="@+id/editText_Prenom"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom"
+        android:id="@+id/textView_Prenom"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/editText_Prenom"
+        android:layout_alignLeft="@+id/textView_Nom"
+        android:layout_alignStart="@+id/textView_Nom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/button_Valider"
+        android:layout_marginTop="89dp"
+        android:onClick="validerButton"
+        android:layout_below="@+id/editText_Prenom"
+        android:layout_alignStart="@+id/editText_Prenom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher Liste"
+        android:id="@+id/button_Afficher_Liste"
+        android:onClick="AfficherListeButton"
+        android:layout_alignBaseline="@+id/button_Valider"
+        android:layout_alignBottom="@+id/button_Valider"
+        android:layout_alignStart="@+id/textView" />
+</RelativeLayout>
